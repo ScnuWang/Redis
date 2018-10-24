@@ -50,11 +50,11 @@
 
 （8）获取所有value
 
-​	hvals key
+​	hvals key # 只返回field对应的value
 
 （9）获取所有的field-value
 
-​	hgetall key
+​	hgetall key # 返回filed和value
 
 ​	在使用hgetall时，如果哈希元素个数比较多，会存在阻塞Redis的可能。 如果开发人员只需要获取部分field，可以使用hmget，如果一定要获取全部 field-value，可以使用hscan命令，该命令会渐进式遍历哈希类型
 
