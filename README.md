@@ -3,7 +3,7 @@
 
 [2018/10/22 - Redis基础（一）](./Redis基础一.md)
 
-[2018/10/22 - 使用pipelining 加速Redis查询](使用pipelining 加速Redis查询.md)
+[2018/10/22 - 使用pipelining 加速Redis查询](./使用pipelining 加速Redis查询.md)
 
 [2018/10/23 - Redis的发布与订阅](./发布与订阅.md)
 
