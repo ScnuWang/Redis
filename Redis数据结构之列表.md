@@ -7,18 +7,29 @@
 
 ![1540393798868](assets/1540393798868.png)
 
+插入
+
 - lpush key value [value ...]  #  从左边插入元素
 - rpush key value [value ...] #  从右边插入元素
 - linsert key before|after pivot value # linsert命令会从列表中找到等于pivot的元素，在其前（before）或者后 （after）插入一个新的元素value，返回当前列表的长度
+
+查询
+
 - lrange key start end # 获取指定范围内的元素列表
 - lindex key index # 获取列表指定索引下标的元素
 - llen key #  获取列表长度
+
+删除
+
 - lpop key # 从列表左侧弹出元素
 - rpop key # 从列表右侧弹出
 - lrem key count value #  从列表中找到等于value的元素进行删除
   - count>0，从左到右，删除最多count个元素。
   - count<0，从右到左，删除最多count绝对值个元素。
   - count=0，删除所有。
+
+修改
+
 - ltrim key start end # 按照索引范围修剪列表
 - lset key index newValue # 修改指定索引下标的元素
 
