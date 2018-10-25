@@ -69,7 +69,7 @@ zunionstore destination numkeys key [key ...] [weights weight [weight ...]]   [a
 
 ### 2. 时间复杂度
 
-​	![1540438483487](C:\Users\geekview\AppData\Roaming\Typora\typora-user-images\1540438483487.png)
+​	![1540439340153](assets/1540439340153.png)
 
 ### 3. 内部编码
 

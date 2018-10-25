@@ -31,7 +31,7 @@ srandmember和spop都是随机从集合选出元素，两者不同的是spop命�
 
 ### 2. 时间复杂度
 
-![1540436993945](C:\Users\geekview\AppData\Roaming\Typora\typora-user-images\1540436993945.png)
+![1540439366896](assets/1540439366896.png)
 
 ### 3. 内部编码
 
