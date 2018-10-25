@@ -37,5 +37,3 @@ HSET key field1 value1 field2 value2 # 添加数据
 HGETALL key # 返回所有存入的数据，包括field
 HGET key field1 # 获取value1，如果添加时的数据是数字型，仍然返回字符串类型
 HINCRBY key field number # 原子性操作，number 表示要加的数字大小
-
-### 5. String
