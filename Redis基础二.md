@@ -50,11 +50,11 @@ dump key # 将键值序列化，格式采用的是RDB格式
 restore key ttl value # 将上面序列化的值进行复原，其中ttl参数代表过期时间，如果ttl=0代表没有过期时间。
 ```
 
-​	注意：
-
-​		1.整个迁移过程并非原子性的，而是通过客户端分步完成的 
-
-​		2.迁移过程是开启了两个客户端连 接，所以dump的结果不是在源Redis和目标Redis之间进行传输
+    注意：
+    
+    ​	1.整个迁移过程并非原子性的，而是通过客户端分步完成的 
+    
+    ​	2.迁移过程是开启了两个客户端连 接，所以dump的结果不是在源Redis和目标Redis之间进行传输
 
 - migrate
 
@@ -64,11 +64,11 @@ restore key ttl value # 将上面序列化的值进行复原，其中ttl参数�
 
   注意：
 
-  ​	第一，整个过程是原子执行的，不需要在多个Redis实例上开启 客户端的，只需要在源Redis上执行migrate命令即可。
+  ​	1. 整个过程是原子执行的，不需要在多个Redis实例上开启 客户端的，只需要在源Redis上执行migrate命令即可。
 
-  ​	第二，migrate命令的 数据传输直接在源Redis和目标Redis上完成的。
+  ​	2. migrate命令的 数据传输直接在源Redis和目标Redis上完成的。
 
-  ​	第三，目标Redis完成restore 后会发送OK给源Redis，源Redis接收后会根据migrate对应的选项来决定是否 在源Redis上删除对应的键。
+  ​	3. 目标Redis完成restore 后会发送OK给源Redis，源Redis接收后会根据migrate对应的选项来决定是否 在源Redis上删除对应的键。
 
   >下面对migrate的参数进行逐个说明：
   >host：目标Redis的IP地址。
